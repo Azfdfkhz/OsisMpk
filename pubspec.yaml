@@ -1,0 +1,36 @@
+name: osis_finance
+description: Aplikasi Bendahara OSIS/MPK - Kelola Keuangan. Transparan. Bertanggung Jawab.
+publish_to: 'none'
+version: 1.0.1+2
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: '>=3.19.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # State management (README bagian 27 - Recommended: Riverpod)
+  flutter_riverpod: ^2.5.1
+
+  # Backend (README bagian 2, 28)
+  supabase_flutter: ^2.5.6
+
+  # Chart untuk "Ringkasan Arus Kas"
+  fl_chart: ^0.68.0
+
+  # Format tanggal & mata uang (Rupiah)
+  intl: ^0.19.0
+
+  # Upload foto barang / foto nota (README bagian 20, 21)
+  image_picker: ^1.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
